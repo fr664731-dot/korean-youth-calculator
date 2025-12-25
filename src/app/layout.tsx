@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   keywords: '청년도약계좌, 청년희망적금, 정부지원금, 청년정책, 금융계산기',
   verification: {
     google: 'BBDle2H1N6g_3XGHGG0ObJEWzpgZYs43-lLDtpGZvkg',
+    other: {
+      'naver-site-verification': 'bd48981bb9c57ae483eb3be91d8a7f23e9f1cbf4',
+    },
   },
 }
 

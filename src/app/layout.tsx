@@ -23,15 +23,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <head>
+      <body className={inter.className}>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467669092859638"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-      </head>
-      <body className={inter.className}>
         <div className="min-h-screen flex flex-col pb-16 md:pb-0">
           <Header />
           <main className="flex-1">{children}</main>

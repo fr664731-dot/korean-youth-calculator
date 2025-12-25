@@ -17,6 +17,7 @@ export default function Header() {
             <Link href="/" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">홈</Link>
             <Link href="/calculator/youth-jump" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">청년도약계좌</Link>
             <Link href="/calculator/rent-support" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">월세지원</Link>
+            <Link href="/guide" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">정책가이드</Link>
           </nav>
         </div>
       </div>

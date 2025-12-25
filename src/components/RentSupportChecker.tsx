@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Home, CheckCircle, XCircle, ExternalLink, AlertCircle } from 'lucide-react'
+import AdBanner from './AdBanner'
 
 interface CheckResult {
   isEligible: boolean
@@ -174,6 +175,14 @@ export default function RentSupportChecker() {
                   </p>
                 </div>
               )}
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.4 }}
+            >
+              <AdBanner className="my-4" slot="rent-result-banner" />
             </motion.div>
           </motion.div>
         )}

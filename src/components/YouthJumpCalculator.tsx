@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Calculator, TrendingUp, Wallet, Gift } from 'lucide-react'
 import AssetChart from './AssetChart'
 import StackedAssetChart from './StackedAssetChart'
+import AdBanner from './AdBanner'
 
 interface CalculationResult {
   totalDeposit: number
@@ -152,6 +153,14 @@ export default function YouthJumpCalculator() {
                   <p className="font-bold text-xs md:text-base text-blue-600 mt-1">{formatCurrency(result.interest)}원</p>
                 </div>
               </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15, duration: 0.4 }}
+            >
+              <AdBanner className="my-4" slot="result-banner" />
             </motion.div>
 
             <motion.div

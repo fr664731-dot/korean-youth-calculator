@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: '청년 맞춤형 정책 금융 계산기',
   description: '청년도약계좌, 청년희망적금 등 청년 정책 금융 상품의 예상 수익을 쉽게 계산해보세요.',
   keywords: '청년도약계좌, 청년희망적금, 정부지원금, 청년정책, 금융계산기',
+  verification: {
+    google: 'BBDle2H1N6g_3XGHGG0ObJEWzpgZYs43-lLDtpGZvkg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

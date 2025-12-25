@@ -1,7 +1,8 @@
-import { ArrowRight, Shield, TrendingUp, Users } from 'lucide-react'
+import { ArrowRight, Shield, TrendingUp, Users, HelpCircle, ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 import YouthJumpCalculator from '@/components/YouthJumpCalculator'
 import AdSlot from '@/components/AdSlot'
+import FAQSection from '@/components/FAQSection'
 
 export default function Home() {
   return (
@@ -67,6 +68,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FAQSection />
 
       <section className="py-6 md:py-8 bg-gray-50">
         <div className="max-w-4xl mx-auto px-3 md:px-4">

@@ -6,6 +6,7 @@ import { Calculator, TrendingUp, Wallet, Gift } from 'lucide-react'
 import AssetChart from './AssetChart'
 import StackedAssetChart from './StackedAssetChart'
 import AdBanner from './AdBanner'
+import KakaoShareButton from './KakaoShareButton'
 
 interface CalculationResult {
   totalDeposit: number
@@ -136,7 +137,7 @@ export default function YouthJumpCalculator() {
               <h3 className="text-base md:text-lg font-bold text-gray-900 mb-3 md:mb-4">5년 후 예상 만기 금액</h3>
               <p className="text-3xl md:text-5xl font-bold text-primary-600 mb-4 md:mb-6">{formatCurrency(result.totalAmount)}원</p>
               
-              <div className="grid grid-cols-3 gap-2 md:gap-4">
+              <div className="grid grid-cols-3 gap-2 md:gap-4 mb-4">
                 <div className="text-center p-3 md:p-4 bg-white rounded-2xl shadow-sm">
                   <Wallet className="w-5 h-5 md:w-6 md:h-6 text-gray-600 mx-auto mb-1 md:mb-2" />
                   <p className="text-[10px] md:text-xs text-gray-500">총 납입액</p>
@@ -152,6 +153,10 @@ export default function YouthJumpCalculator() {
                   <p className="text-[10px] md:text-xs text-gray-500">이자 수익</p>
                   <p className="font-bold text-xs md:text-base text-blue-600 mt-1">{formatCurrency(result.interest)}원</p>
                 </div>
+              </div>
+
+              <div className="flex justify-center">
+                <KakaoShareButton totalAmount={result.totalAmount} calculatorType="youth-jump" />
               </div>
             </motion.div>
 

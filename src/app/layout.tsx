@@ -30,6 +30,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
           strategy="beforeInteractive"
         />
+        <Script
+          src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js"
+          integrity="sha384-l+xbElFSnPZ2rOaPrU//2FF5B4LB8FiX5q4fXYTlfcG4PGpMkE1vcL7kNXI6Cci0"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <div className="min-h-screen flex flex-col pb-16 md:pb-0">
           <Header />
           <main className="flex-1">{children}</main>

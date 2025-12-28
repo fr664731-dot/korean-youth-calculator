@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import YouthJumpCalculator from '@/components/YouthJumpCalculator'
+import AdvancedYouthJumpWizard from '@/components/AdvancedYouthJumpWizard'
 import AdSlot from '@/components/AdSlot'
 import { Info, CheckCircle } from 'lucide-react'
 
@@ -24,7 +24,7 @@ export default function YouthJumpPage() {
       </section>
 
       <section className="py-8">
-        <div className="max-w-4xl mx-auto px-4"><YouthJumpCalculator /></div>
+        <div className="max-w-4xl mx-auto px-4"><AdvancedYouthJumpWizard /></div>
       </section>
 
       <section className="py-8">

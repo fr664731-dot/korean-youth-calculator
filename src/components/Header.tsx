@@ -15,6 +15,7 @@ export default function Header() {
           
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">홈</Link>
+            <Link href="/compare" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">정책비교</Link>
             <Link href="/calculator/youth-jump" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">청년도약계좌</Link>
             <Link href="/calculator/rent-support" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">월세지원</Link>
             <Link href="/guide" className="text-gray-600 hover:text-primary-600 transition-colors font-medium">정책가이드</Link>

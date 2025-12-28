@@ -57,22 +57,23 @@ export default function Home() {
             <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">청년 정책 한눈에 비교하기</h2>
             <p className="text-gray-600 text-sm md:text-base">2025년 현재부터 2026년 신규 정책까지 모두 비교해보세요</p>
           </div>
-          <Link href="/compare" className="card hover:shadow-xl transition-all group bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200 mb-6">
-            <div className="flex items-center justify-between gap-4">
-              <div className="flex-1 min-w-0">
+          <Link href="/compare" className="block bg-white rounded-2xl shadow-sm border border-purple-200 hover:shadow-xl transition-all group bg-gradient-to-br from-purple-50 to-pink-50 mb-6 p-5 md:p-6">
+            <div className="flex items-center gap-4">
+              <div className="flex-1 min-w-0 pr-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold mb-3">
                   <span>NEW</span>
-                  <span>2026년 신규 정책 포함</span>
+                  <span className="hidden sm:inline">2026년 신규 정책 포함</span>
+                  <span className="sm:hidden">2026년 신규</span>
                 </div>
-                <h3 className="font-bold text-lg md:text-xl text-gray-900 mb-2 group-hover:text-purple-600">
+                <h3 className="font-bold text-base md:text-xl text-gray-900 mb-2 group-hover:text-purple-600">
                   청년 정책 금융 상품 비교
                 </h3>
                 <p className="text-gray-600 text-sm md:text-base">
                   청년도약계좌, 청년미래적금, 청년내일저축계좌, 월세지원까지 모든 정책을 한눈에!
                 </p>
               </div>
-              <div className="flex-shrink-0">
-                <ArrowRight className="w-6 h-6 md:w-8 md:h-8 text-purple-600 group-hover:translate-x-2 transition-transform" />
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12">
+                <ArrowRight className="w-6 h-6 md:w-8 md:h-8 text-purple-600 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
           </Link>
